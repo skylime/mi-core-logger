@@ -10,6 +10,11 @@ set -o errexit
 # Configuring image specific packages
 echo "* Configuring image specific packages.";
 
+# Download and install logstash
+echo "* Download and install logstash"
+mkdir -p /opt/logstash
+curl https://download.elasticsearch.org/logstash/logstash/logstash-1.4.2.tar.gz | tar xz -C /opt/logstash --strip-components=1
+
 # Clean up
 echo "* Cleaning up."
 rm -rf /root/*
