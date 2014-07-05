@@ -8,5 +8,4 @@ Remote logging server with logstash, elasticsearch and kibana. Warning elasticse
 
 ## mdata variables
 
-- `elasticsearch_custer_name`:
 - `nginx_ssl`:

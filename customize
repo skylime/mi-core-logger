@@ -22,6 +22,10 @@ echo "* Download and install kibana"
 mkdir -p /var/www/kibana
 curl https://download.elasticsearch.org/kibana/kibana/kibana-3.1.0.tar.gz | tar xz -C /var/www/kibana --strip-components=1
 
+# Nginx SSL folder
+echo "* Create ssl folder"
+mkdir -p /opt/local/etc/nginx/ssl
+
 # Enable mdata-setup script
 echo "* Enable mdata-setup script"
 svccfg import /tmp/mdata-setup.xml
