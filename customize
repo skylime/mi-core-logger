@@ -11,11 +11,18 @@ set -o errexit
 # Configuring image specific packages
 echo "* Configuring image specific packages.";
 
+# Create extra logstash user for more security
+echo "* Create extra logstash user for more security"
+groupadd logstash
+mkdir -p /opt/logstash
+useradd -d /opt/logstash -c "logstash user" -s /usr/bin/false -g logstash logstash
+passwd -N logstash
+
 # Download and install logstash
 echo "* Download and install logstash"
-mkdir -p /opt/logstash
 curl https://download.elasticsearch.org/logstash/logstash/logstash-${LOGSTASH_VERSION}.tar.gz | tar xz -C /opt/logstash --strip-components=1
 mkdir -p /opt/logstash/etc
+chown -R logstash:logstash /opt/logstash
 
 # Download and install kibana
 echo "* Download and install kibana"
