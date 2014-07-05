@@ -21,8 +21,8 @@ passwd -N logstash
 # Download and install logstash
 echo "* Download and install logstash"
 curl https://download.elasticsearch.org/logstash/logstash/logstash-${LOGSTASH_VERSION}.tar.gz | tar xz -C /opt/logstash --strip-components=1
-mkdir -p /opt/logstash/etc
-chown -R logstash:logstash /opt/logstash
+mkdir -p /opt/logstash/etc /var/log/remote
+chown -R logstash:logstash /opt/logstash /var/log/remote
 
 # Download and install kibana
 echo "* Download and install kibana"

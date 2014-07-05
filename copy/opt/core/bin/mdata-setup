@@ -6,3 +6,8 @@ chmod 400 /opt/local/etc/nginx/ssl/nginx.pem
 
 # Nginx authentication
 mdata-get nginx_auth > /opt/local/etc/nginx/auth.htpasswd
+
+# Logstash ssl certificate
+mdata-get logstash_ssl > /opt/logstash/etc/logstash.pem
+chown logstash:logstash /opt/logstash/etc/logstash.pem
+chmod 400 /opt/logstash/etc/logstash.pem
