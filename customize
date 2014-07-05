@@ -15,6 +15,12 @@ echo "* Configuring image specific packages.";
 echo "* Download and install logstash"
 mkdir -p /opt/logstash
 curl https://download.elasticsearch.org/logstash/logstash/logstash-${LOGSTASH_VERSION}.tar.gz | tar xz -C /opt/logstash --strip-components=1
+mkdir -p /opt/logstash/etc
+
+# Download and install kibana
+echo "* Download and install kibana"
+mkdir -p /var/www/kibana
+curl https://download.elasticsearch.org/kibana/kibana/kibana-3.1.0.tar.gz | tar xz -C /var/www/kibana --strip-components=1
 
 # Enable mdata-setup script
 echo "* Enable mdata-setup script"
