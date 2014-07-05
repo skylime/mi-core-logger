@@ -44,6 +44,11 @@ echo "* Enable mdata-setup script"
 svccfg import /tmp/mdata-setup.xml
 rm /tmp/mdata-setup.xml
 
+# Import logstash manifest
+echo "* Import logstash manifest"
+svccfg import /tmp/logstash.xml
+rm /tmp/logstash.xml
+
 # Clean up
 echo "* Cleaning up."
 rm -rf /root/*
