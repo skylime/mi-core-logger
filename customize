@@ -3,6 +3,8 @@
 # Put customizations to your image in this file.
 
 LOGSTASH_VERSION='1.4.2'
+MUNIN_PLUGIN_VERSION='0.1'
+
 PATH=/opt/local/gnu/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin
 
 # Exit if any commands fail
@@ -38,6 +40,10 @@ sed -i 's|elasticsearch: "http://"+window.location.hostname+":9200"|elasticsearc
 # Nginx SSL folder
 echo "* Create ssl folder"
 mkdir -p /opt/local/etc/nginx/ssl
+
+# Download and install community munin plugins
+echo "* Download and install community munin plugins (overwrite all other plugins)"
+curl -L https://github.com/drscream/smartos-munin-plugins/archive/${MUNIN_PLUGIN_VERSION}.tar.gz | tar xz -C /opt/local/lib/munin/plugins
 
 # Enable mdata-setup script
 echo "* Enable mdata-setup script"

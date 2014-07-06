@@ -15,6 +15,9 @@ The logstash configuration file is provided in `copy/opt/logstash/etc/core-logge
 - `nginx_ssl` (required): ssl cert, key and CA for nginx in pem format
 - `logstash_ssl` (required): ssl cert, key and CA for syslog in pem format
 
+- `munin_allow`: hosts that are allowed to connect to munin, separated by space
+- `munin_deny`: hosts that are explicit not allowed, separated by space
+
 ## services
 
 - `80/tcp`: http redirect to https
