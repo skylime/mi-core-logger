@@ -4,7 +4,9 @@ Please refer to https://github.com/joyent/mibe for use of this repo.
 
 ## description
 
-Remote logging server with logstash, elasticsearch and kibana. Warning elasticsearch needs lot's of memory :-) For security reason the elasticsearch only listen on localhost and didn't join any cluster automatically. We recommend to firewall the remote syslog service. Without any firewall everybody is able to send syslog data to logstash.
+Remote logging server with logstash, elasticsearch and kibana. For security reason the elasticsearch only listen on localhost and didn't join any cluster automatically. We recommend to firewall the remote syslog service. Without any firewall everybody is able to send syslog data to logstash.
+
+**Warning elasticsearch needs lot's of memory :-)**
 
 The logstash configuration file is provided in `copy/opt/logstash/etc/core-logger.conf`.
 
