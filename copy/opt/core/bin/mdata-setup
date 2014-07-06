@@ -1,13 +1,17 @@
 #!/bin/bash
+# source all files from /opt/core/var/mdata-setup/includes/*.sh
+# we recommend a order by NUMBER-scriptname.sh
 
-# Nginx ssl certificates
-mdata-get nginx_ssl > /opt/local/etc/nginx/ssl/nginx.pem
-chmod 400 /opt/local/etc/nginx/ssl/nginx.pem
+PATH=/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+export PATH
 
-# Nginx authentication
-mdata-get nginx_auth > /opt/local/etc/nginx/auth.htpasswd
+# Set basedir for includes
+MDATA_SETUP_INC='/opt/core/var/mdata-setup/includes'
 
-# Logstash ssl certificate
-mdata-get logstash_ssl > /opt/logstash/etc/logstash.pem
-chown logstash:logstash /opt/logstash/etc/logstash.pem
-chmod 400 /opt/logstash/etc/logstash.pem
+if [ -d "${MDATA_SETUP_INC}" ]; then
+	for FILE in ${MDATA_SETUP_INC}/*.sh; do
+		if [ -r "${FILE}" ]; then
+			source ${FILE}
+		fi
+	done
+fi
