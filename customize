@@ -41,6 +41,10 @@ sed -i 's|elasticsearch: "http://"+window.location.hostname+":9200"|elasticsearc
 echo "* Create ssl folder"
 mkdir -p /opt/local/etc/nginx/ssl
 
+# Create munin template file that will be used during mdata setup
+echo "* Create munin template file that will be used during mdata setup"
+cp /opt/local/etc/munin/munin-node.conf /opt/local/etc/munin/munin-node.conf.tpl
+
 # Download and install community munin plugins
 echo "* Download and install community munin plugins (overwrite all other plugins)"
 curl -L https://github.com/drscream/smartos-munin-plugins/archive/${MUNIN_PLUGIN_VERSION}.tar.gz | tar xz -C /opt/local/lib/munin/plugins
