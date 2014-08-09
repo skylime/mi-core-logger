@@ -1,7 +1,7 @@
 name="core-logger"
 organization="SkyLime"
 brand="Instance"
-version="14.1.0"
+version="14.2.0"
 description="Remote logging server with logstash, elasticsearch and kibana"
 homepage="https://github.com/skylime/mi-core-logger"
 users="root admin"
