@@ -1,6 +1,6 @@
 # mi-core-logger
 
-Please refer to https://github.com/joyent/mibe for use of this repo.
+This repository is based on [Joyent mibe](https://github.com/joyent/mibe). Please note this repository should be build with the [mi-core-base](https://github.com/skylime/mi-core-base) mibe image.
 
 ## description
 
@@ -12,11 +12,11 @@ The logstash configuration file is provided in `copy/opt/logstash/etc/core-logge
 
 ## mdata variables
 
-- `nginx_ssl` (required): ssl cert, key and CA for nginx in pem format
-- `logstash_ssl` (required): ssl cert, key and CA for syslog in pem format
+- `nginx_ssl` [*]: ssl cert, key and CA for nginx in pem format
+- `nginx_auth` [*]: htpasswd authentication data (username:password_hash)
+- `logstash_ssl` [*]: ssl cert, key and CA for syslog in pem format
 
-- `munin_allow`: hosts that are allowed to connect to munin, separated by space
-- `munin_deny`: hosts that are explicit not allowed, separated by space
+[*] is required to work properly. 
 
 ## services
 
