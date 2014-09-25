@@ -1,7 +1,10 @@
-## Changelog for mi-core-logger
+## Change Log
 
-### 14.2.0 (2014/09/21 18:30 +00:00)
+### 14.2.1 (2014/09/25 21:46 +00:00)
+- [c830b0e](https://github.com/skylime/mi-core-logger/commit/c830b0e54a68413c7f9a42cd6baca97edf341823) update to new core-base image: a6fb1ff0-4333-11e4-a0e1-370c81688134 (@drscream)
+- [4b406eb](https://github.com/skylime/mi-core-logger/commit/4b406eb7f756d78584aac520c136994c36215d33) version update (@drscream)
 
+### 14.2.0 (2014/09/21 18:31 +00:00)
 - [6598c33](https://github.com/skylime/mi-core-logger/commit/6598c33af9f4ef8825b526beacfad663d04313cc) First commit with minimal required pkgs (@drscream)
 - [b8c3e81](https://github.com/skylime/mi-core-logger/commit/b8c3e819458200773ba192f01266cdb6de139ab1) Update manifest from example to the correct information (@drscream)
 - [53f66b7](https://github.com/skylime/mi-core-logger/commit/53f66b733b4349be2233b125c4ae1b911588ad55) download and install logstash (@drscream)
@@ -36,3 +39,4 @@
 - [589b8cd](https://github.com/skylime/mi-core-logger/commit/589b8cda7834169cba97540defbef9288d5a8370) update readme file (@drscream)
 - [ad7c408](https://github.com/skylime/mi-core-logger/commit/ad7c408cc3d141b835c479e2232edd034ec4ba83) update to new core-base image: 99c9e7ac-34ed-11e4-bdc4-236f63b1ea9d (@drscream)
 - [0f4cdb0](https://github.com/skylime/mi-core-logger/commit/0f4cdb0e080930e20b3ca4240e807c181fc0f7e0) update to new core-base image: 6babbf24-3765-11e4-a87a-23e846a65e81 (@drscream)
+- [833ca65](https://github.com/skylime/mi-core-logger/commit/833ca65a10a722f5d129363fe30363d28242b76a) update changelog (@drscream)
