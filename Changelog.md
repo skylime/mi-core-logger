@@ -1,42 +1,64 @@
-## Change Log
+# Changelog
 
-### 14.2.1 (2014/09/25 21:46 +00:00)
-- [c830b0e](https://github.com/skylime/mi-core-logger/commit/c830b0e54a68413c7f9a42cd6baca97edf341823) update to new core-base image: a6fb1ff0-4333-11e4-a0e1-370c81688134 (@drscream)
-- [4b406eb](https://github.com/skylime/mi-core-logger/commit/4b406eb7f756d78584aac520c136994c36215d33) version update (@drscream)
+## 14.2.2
 
-### 14.2.0 (2014/09/21 18:31 +00:00)
-- [6598c33](https://github.com/skylime/mi-core-logger/commit/6598c33af9f4ef8825b526beacfad663d04313cc) First commit with minimal required pkgs (@drscream)
-- [b8c3e81](https://github.com/skylime/mi-core-logger/commit/b8c3e819458200773ba192f01266cdb6de139ab1) Update manifest from example to the correct information (@drscream)
-- [53f66b7](https://github.com/skylime/mi-core-logger/commit/53f66b733b4349be2233b125c4ae1b911588ad55) download and install logstash (@drscream)
-- [629c2f5](https://github.com/skylime/mi-core-logger/commit/629c2f57409f805f5b48aa5524916dd8cd04ba4e) Ready for mdata information (@drscream)
-- [925b4e4](https://github.com/skylime/mi-core-logger/commit/925b4e4a465c8e563b9b74e6ea8b5980a50c081c) Download and install kibana (@drscream)
-- [ccfad78](https://github.com/skylime/mi-core-logger/commit/ccfad781d1396c8c6ddbc2ef34a76cfd57d3318c) Add nginx config more or less from the kibana example (@drscream)
-- [8fe97bf](https://github.com/skylime/mi-core-logger/commit/8fe97bfe7f284c9790749d585d87099e588c4447) Add default settings for elasticsearch (@drscream)
-- [982705e](https://github.com/skylime/mi-core-logger/commit/982705ed2ed6c554ba29bfc69b59e038be171ee7) Extra logfile isn't working for elasticsearch (@drscream)
-- [96ecd20](https://github.com/skylime/mi-core-logger/commit/96ecd20529ab200dd87640d627e23a8ef89fdadf) Only support https for kibana webinterface (@drscream)
-- [7477781](https://github.com/skylime/mi-core-logger/commit/74777813b19fc4f04aba0c27da2c67d1b097c0bb) add mdata get for nginx infos (@drscream)
-- [bca21da](https://github.com/skylime/mi-core-logger/commit/bca21dafdf84da60a2c5275d62498e2d0a59e8fe) Add logstash manifest and be more secure with extra user (@drscream)
-- [f9b87bc](https://github.com/skylime/mi-core-logger/commit/f9b87bc04fb82a9f0d681b21821904db513c32ed) Modify logstash manifest to run an agent (@drscream)
-- [8835a2f](https://github.com/skylime/mi-core-logger/commit/8835a2f4dacc567a88c20c044c64b01a1a346d0e) Update README and provide logstash configuration file (@drscream)
-- [b855bc7](https://github.com/skylime/mi-core-logger/commit/b855bc7e2a41a41bae0071e2cf6d90059a8634e8) fix typo in manifest file (@drscream)
-- [cace2c4](https://github.com/skylime/mi-core-logger/commit/cace2c4ed072ffc34fbe7a8053f85c57b7f9fad0) fix typo in logstash config (@drscream)
-- [9b91e7b](https://github.com/skylime/mi-core-logger/commit/9b91e7b815712b245e9274f41e5077e9ed56a886) add warning (@drscream)
-- [3433b01](https://github.com/skylime/mi-core-logger/commit/3433b01563d7a52e9500aadc1ab12d90ae18fc72) move mdata-scripts to extra includes folder for better sync between mibe images (@drscream)
-- [64649eb](https://github.com/skylime/mi-core-logger/commit/64649eb8d8996adf8ac32f97e2dad0335b1e28ae) add `-s` for mdata-setup enable, add missing nginx enable zoneinit (@drscream)
-- [3d7c9c0](https://github.com/skylime/mi-core-logger/commit/3d7c9c03fc4f2bbfdea8e282e2682fe3b7f61d0e) Add munin support (@drscream)
-- [9b78f7b](https://github.com/skylime/mi-core-logger/commit/9b78f7b3143808b90a79a9dd8b90a26bb726a990) Create munin template file that will be used during mdata setup (@drscream)
-- [90ec7c8](https://github.com/skylime/mi-core-logger/commit/90ec7c80dcc828a5c2821ba336e1cd1bf9a69fe6) update munin plugins to new version 0.2 (@drscream)
-- [5937bb3](https://github.com/skylime/mi-core-logger/commit/5937bb305d9329c85bd0c290ee7c605602097646) fixed typo (@BroSys)
-- [2f0d332](https://github.com/skylime/mi-core-logger/commit/2f0d332205f2a27cb8bd37dce00bd69a12bad54b) version update (@drscream)
-- [fdc71b0](https://github.com/skylime/mi-core-logger/commit/fdc71b0b89da0bec4a5c9d7d704bebbc5173bb6a) add base (@drscream)
-- [09ee4df](https://github.com/skylime/mi-core-logger/commit/09ee4dfd76766129333c08d4de5beb3dcfaad122) update to mi-core-base (@drscream)
-- [262af62](https://github.com/skylime/mi-core-logger/commit/262af628086c8e7d61fad2c681de7025cf25dbcc) update to new base image (@drscream)
-- [011fafb](https://github.com/skylime/mi-core-logger/commit/011fafb9cef3dec608e29addbacddaa23c12eea8) update to new core-base image: 86465fe4-312d-11e4-a145-57554f40fa40 (@drscream)
-- [9f38f20](https://github.com/skylime/mi-core-logger/commit/9f38f205152fef983f3072e68f5d9627754e4a4b) update to new core-base image: fbd244a6-32bf-11e4-8629-73c3e6ed202d (@drscream)
-- [7b49ce0](https://github.com/skylime/mi-core-logger/commit/7b49ce080b32d17c96fdd3f4afbacd42c1dc5324) update to new core-base image: 5f749f3c-335f-11e4-a952-e780d226fa57 (@drscream)
-- [a0dc82f](https://github.com/skylime/mi-core-logger/commit/a0dc82f1691b31cc932a065c4e1db15d3dd59dc8) update to new core-base image: aed27f7a-34c4-11e4-be6c-4392ae5601bc (@drscream)
-- [36c272f](https://github.com/skylime/mi-core-logger/commit/36c272f883924fe0139f5dee7d324226d0533eb8) update to new core-base image: 89402478-34cf-11e4-ac94-f3a4d047918f (@drscream)
-- [589b8cd](https://github.com/skylime/mi-core-logger/commit/589b8cda7834169cba97540defbef9288d5a8370) update readme file (@drscream)
-- [ad7c408](https://github.com/skylime/mi-core-logger/commit/ad7c408cc3d141b835c479e2232edd034ec4ba83) update to new core-base image: 99c9e7ac-34ed-11e4-bdc4-236f63b1ea9d (@drscream)
-- [0f4cdb0](https://github.com/skylime/mi-core-logger/commit/0f4cdb0e080930e20b3ca4240e807c181fc0f7e0) update to new core-base image: 6babbf24-3765-11e4-a87a-23e846a65e81 (@drscream)
-- [833ca65](https://github.com/skylime/mi-core-logger/commit/833ca65a10a722f5d129363fe30363d28242b76a) update changelog (@drscream)
+### New
+
+* update to new core-base image 43aaede4-4622-11e4-a839-d3704910e498. [Thomas Merkel]
+
+## 14.2.1 (2014-09-25)
+
+### Other
+
+* changelog update. [Thomas Merkel]
+* version update. [Thomas Merkel]
+* update to new core-base image: a6fb1ff0-4333-11e4-a0e1-370c81688134. [Thomas Merkel]
+
+## 14.2.0 (2014-09-21)
+
+### Other
+
+* update changelog. [Thomas Merkel]
+* update to new core-base image: 6babbf24-3765-11e4-a87a-23e846a65e81. [Thomas Merkel]
+* update to new core-base image: 99c9e7ac-34ed-11e4-bdc4-236f63b1ea9d. [Thomas Merkel]
+* update readme file. [Thomas Merkel]
+* update to new core-base image: 89402478-34cf-11e4-ac94-f3a4d047918f. [Thomas Merkel]
+* update to new core-base image: aed27f7a-34c4-11e4-be6c-4392ae5601bc. [Thomas Merkel]
+* update to new core-base image: 5f749f3c-335f-11e4-a952-e780d226fa57. [Thomas Merkel]
+* update to new core-base image: fbd244a6-32bf-11e4-8629-73c3e6ed202d. [Thomas Merkel]
+* update to new core-base image: 86465fe4-312d-11e4-a145-57554f40fa40. [Thomas Merkel]
+* update to new base image. [Thomas Merkel]
+* update to mi-core-base. [Thomas Merkel]
+* add base. [Thomas Merkel]
+* version update. [Thomas Merkel]
+* fixed typo. [BroSys]
+* update munin plugins to new version 0.2. [Thomas Merkel]
+* Create munin template file that will be used during mdata setup. [Thomas Merkel]
+* Add munin support. [Thomas Merkel]
+* add `-s` for mdata-setup enable, add missing nginx enable zoneinit. [Thomas Merkel]
+* move mdata-scripts to extra includes folder for better sync between mibe images. [Thomas Merkel]
+
+    * modify mdata-setup to use includes * add includes directory with
+    scripts
+
+* add warning. [Thomas Merkel]
+* fix typo in logstash config. [Thomas Merkel]
+* fix typo in manifest file. [Thomas Merkel]
+* Update README and provide logstash configuration file. [Thomas Merkel]
+* Modify logstash manifest to run an agent. [Thomas Merkel]
+* Add logstash manifest and be more secure with extra user. [Thomas Merkel]
+* add mdata get for nginx infos. [Thomas Merkel]
+* Only support https for kibana webinterface. [Thomas Merkel]
+* Extra logfile isn't working for elasticsearch. [Thomas Merkel]
+* Add default settings for elasticsearch. [Thomas Merkel]
+* Add nginx config more or less from the kibana example. [Thomas Merkel]
+* Download and install kibana. [Thomas Merkel]
+* Ready for mdata information. [Thomas Merkel]
+* download and install logstash. [Thomas Merkel]
+* Update manifest from example to the correct information. [Thomas Merkel]
+* First commit with minimal required pkgs. [Thomas Merkel]
+
+    * cleanup changelog * create license file * add minimal readme for
+    later
+
+
