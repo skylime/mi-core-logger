@@ -4,6 +4,7 @@
 
 ### New
 
+* version update. [Thomas Merkel]
 * use delegate dataset for the log files. [Thomas Merkel]
 * add password protection to all parts of kibana. [Thomas Merkel]
 
