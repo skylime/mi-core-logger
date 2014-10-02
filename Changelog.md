@@ -1,6 +1,17 @@
 # Changelog
 
-## 14.2.2
+## 14.2.3
+
+### New
+
+* update to new core-base image 5f32cd38-4a1f-11e4-82e4-632b59542bc6. [Thomas Merkel]
+* add jq tool because of json logfiles. [Thomas Merkel]
+
+### Fix
+
+* modify configuration file to be valid for encrypted data on default port. [Thomas Merkel]
+
+## 14.2.2 (2014-09-27)
 
 ### New
 
