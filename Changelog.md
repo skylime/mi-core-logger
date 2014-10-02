@@ -1,6 +1,17 @@
 # Changelog
 
-## 14.2.3
+## 14.2.4
+
+### New
+
+* use delegate dataset for the log files. [Thomas Merkel]
+* add password protection to all parts of kibana. [Thomas Merkel]
+
+### Fix
+
+* fix permissions for logging folders. [Thomas Merkel]
+
+## 14.2.3 (2014-10-02)
 
 ### New
 
