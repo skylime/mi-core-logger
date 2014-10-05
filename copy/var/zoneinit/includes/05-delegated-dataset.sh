@@ -11,6 +11,8 @@ if zfs list ${DDS} 1>/dev/null 2>&1; then
 	zfs set mountpoint=/var/log/elasticsearch ${DDS}/log-elasticsearch
 	zfs set mountpoint=/var/db/elasticsearch  ${DDS}/db-elasticsearch
 
+	zfs set compression=lz4 ${DDS}/log-remote
+
 	chown logstash:adm /var/log/remote
 	chown elasticsearch:adm /var/log/elasticsearch
 	chown elasticsearch:adm /var/db/elasticsearch
