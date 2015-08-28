@@ -12,6 +12,15 @@ set -o errexit
 # Configuring image specific packages
 echo "* Configuring image specific packages.";
 
+# default SearchIndex for elasticsearch
+echo "Creating default searchindex 'log-' for elasticsearch"
+for((i=0; i<5; i++))
+do
+  /opt/local/bin/curl --connect-timeout 5 -XPUT 'localhost:9200/log-?pretty' && break
+  echo "waiting for retry"
+  sleep 5
+done
+
 # Clean up
 echo "* Cleaning up."
 rm -rf /root/*
