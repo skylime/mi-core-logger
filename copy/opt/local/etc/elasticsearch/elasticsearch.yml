@@ -1,8 +1,6 @@
-cluster.name: core-logger
 script.disable_dynamic: true
 path.conf: /opt/local/etc/elasticsearch
 path.data: /var/db/elasticsearch
 path.work: /var/tmp/elasticsearch
 path.logs: /var/log/elasticsearch
 path.plugins: /opt/local/lib/elasticsearch/plugins
-network.host: 127.0.0.1
