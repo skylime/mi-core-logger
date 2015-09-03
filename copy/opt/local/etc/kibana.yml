@@ -1,0 +1,25 @@
+port: 443
+host: "0.0.0.0"
+elasticsearch_url: "http://127.0.0.1:9200"
+elasticsearch_preserve_host: true
+kibana_index: ".kibana"
+default_app_id: "discover"
+request_timeout: 300000
+shard_timeout: 0
+verify_ssl: true
+
+bundled_plugin_ids:
+ - plugins/dashboard/index
+ - plugins/discover/index
+ - plugins/doc/index
+ - plugins/kibana/index
+ - plugins/markdown_vis/index
+ - plugins/metric_vis/index
+ - plugins/settings/index
+ - plugins/table_vis/index
+ - plugins/vis_types/index
+ - plugins/visualize/index# additional config from zone initialization #
+
+ssl_key_file:  /opt/local/etc/kibana/server.pem
+ssl_cert_file: /opt/local/etc/kibana/server.pem
+log_file:      /var/log/kibana.log
