@@ -18,6 +18,6 @@ bundled_plugin_ids:
  - plugins/settings/index
  - plugins/table_vis/index
  - plugins/vis_types/index
- - plugins/visualize/index# additional config from zone initialization #
+ - plugins/visualize/index
 
 log_file:      /var/log/kibana.log
