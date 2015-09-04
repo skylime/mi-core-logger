@@ -20,6 +20,4 @@ bundled_plugin_ids:
  - plugins/vis_types/index
  - plugins/visualize/index# additional config from zone initialization #
 
-ssl_key_file:  /opt/local/etc/kibana/server.pem
-ssl_cert_file: /opt/local/etc/kibana/server.pem
 log_file:      /var/log/kibana.log
