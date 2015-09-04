@@ -10,16 +10,14 @@ Remote logging server with rsyslog, elasticsearch and kibana. For security reaso
 
 ## mdata variables
 
-- `nginx_ssl` [*]: ssl cert, key and CA for nginx in pem format
-- `nginx_auth` [*]: htpasswd authentication data (username:password_hash)
-- `logstash_ssl` [*]: ssl cert, key and CA for syslog in pem format
+- `kibana_ssl`  [*]: ssl cert, key and CA for nginx in pem format
+- `kibana_auth` [*]: htpasswd authentication data (username:password_hash)
+- `syslog_ssl`  [*]: ssl cert, key and CA for syslog in pem format
 
 [*] is required to work properly. 
 
 ## services
 
-- `80/tcp`: http redirect to https
-- `443/tcp`: https webinterface for roundcube
-- `5514/tcp`: default remote syslog service
+- `443/tcp`: https webinterface for kibana
+- `5514/tcp`: remote syslog service with ssl encryption
 - `5514/udp`: default remote syslog service
-- `5515/tcp`: extra syslog service with ssl encryption
