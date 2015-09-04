@@ -1,4 +1,5 @@
 # List packages to add to your image one per line.
 elasticsearch
+nginx
 http://pkgsrc.smartos.skylime.net/skylime-extra/2015Q1/x86_64/rsyslog-elasticsearch-8.7.0.tgz
 http://pkgsrc.smartos.skylime.net/skylime-extra/2015Q1/x86_64/kibana-4.1.1.tgz
