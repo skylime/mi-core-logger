@@ -18,6 +18,7 @@ Remote logging server with rsyslog, elasticsearch and kibana. For security reaso
 
 ## services
 
-- `443/tcp`: https webinterface for kibana
+- `80/tcp`  : http redirect to https
+- `443/tcp` : https webinterface for kibana
 - `5514/tcp`: remote syslog service with ssl encryption
 - `5514/udp`: default remote syslog service
