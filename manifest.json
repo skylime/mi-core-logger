@@ -13,8 +13,8 @@
 		"mail_auth_user":       {"type": "text", "description": "smtp username if authentication is required"},
 		"mail_auth_pass":       {"type": "text", "description": "smtp password"},
 		"mail_adminaddr":       {"type": "text", "description": "admin email address alias for all mails to root@localhost"},
-		"kibana_ssl":           {"type": "text", "description": "ssl cert, key and CA for nginx in pem format"}
-		"kibana_auth":          {"type": "text", "description": "htpasswd authentication data (username:password_hash)"}
+		"kibana_ssl":           {"type": "text", "description": "ssl cert, key and CA for nginx in pem format"},
+		"kibana_auth":          {"type": "text", "description": "htpasswd authentication data (username:password_hash)"},
 		"nginx_ssl":            {"type": "text", "description": "ssl cert, key and CA for syslog in pem format"}
 	}
 }
