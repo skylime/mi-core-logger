@@ -1,5 +1,19 @@
 # Changelog
 
+## %%version%% (unreleased)
+
+### New
+
+* Add lz4 compression to logfiles. [Thomas Merkel]
+* Logservice is rsyslog now
+* added omelasticsearch to log directly into elasticsearch
+* Kibana as log-GUI
+* Added basic_auth for kibana with nginx. [Boris Poblotzki]
+
+### Other
+
+* Default SearchIndex is log [Boris Poblotzki]
+
 ## 14.2.4
 
 ### New

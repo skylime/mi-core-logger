@@ -2,7 +2,6 @@
 #
 # Put customizations to your image in this file.
 
-LOGSTASH_VERSION='1.4.2'
 MUNIN_PLUGIN_VERSION='0.2'
 
 PATH=/opt/local/gnu/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin
@@ -13,38 +12,14 @@ set -o errexit
 # Configuring image specific packages
 echo "* Configuring image specific packages.";
 
-# Create extra logstash user for more security
-echo "* Create extra logstash user for more security"
-groupadd logstash
-mkdir -p /opt/logstash
-useradd -d /opt/logstash -c "logstash user" -s /usr/bin/false -g logstash logstash
-passwd -N logstash
-
-# Download and install logstash
-echo "* Download and install logstash"
-curl https://download.elasticsearch.org/logstash/logstash/logstash-${LOGSTASH_VERSION}.tar.gz | tar xz -C /opt/logstash --strip-components=1
-mkdir -p /opt/logstash/etc /var/log/remote
-chown -R logstash:logstash /opt/logstash /var/log/remote
-
-# Download and install kibana
-echo "* Download and install kibana"
-mkdir -p /var/www/kibana
-curl https://download.elasticsearch.org/kibana/kibana/kibana-3.1.0.tar.gz | tar xz -C /var/www/kibana --strip-components=1
-chown -R www:www /var/www/kibana
-
-# Modify kibana config to use https connection
-echo "* Modify kibana config to use https connection"
-sed -i 's|elasticsearch: "http://"+window.location.hostname+":9200"|elasticsearch: "https://"+window.location.hostname|g' \
-	/var/www/kibana/config.js
-
-# Nginx SSL folder
-echo "* Create ssl folder"
-mkdir -p /opt/local/etc/nginx/ssl
-
-# Import logstash manifest
-echo "* Import logstash manifest"
-svccfg import /tmp/logstash.xml
-rm /tmp/logstash.xml
+# default SearchIndex for elasticsearch
+echo "Creating default searchindex 'log-' for elasticsearch"
+for((i=0; i<5; i++))
+do
+  /opt/local/bin/curl --connect-timeout 5 -XPUT 'localhost:9200/log-?pretty' && break
+  echo "waiting for retry"
+  sleep 5
+done
 
 # Clean up
 echo "* Cleaning up."
